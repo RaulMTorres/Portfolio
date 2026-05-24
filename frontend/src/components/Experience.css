@@ -1,0 +1,61 @@
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.timeline__item {
+  position: relative;
+  padding: 0 0 2rem 2.5rem;
+}
+
+.timeline__item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline__marker {
+  position: absolute;
+  left: 4px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 3px solid var(--color-bg);
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.timeline__period {
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.timeline__content h3 {
+  font-size: 1.15rem;
+  margin: 0.25rem 0;
+}
+
+.timeline__company {
+  color: var(--color-text);
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+}
+
+.timeline__desc {
+  color: var(--color-text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}

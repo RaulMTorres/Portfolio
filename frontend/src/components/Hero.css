@@ -1,0 +1,120 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+ 
+  background:
+    radial-gradient(circle at top right, var(--color-accent-soft) 0%, transparent 50%),
+    var(--color-bg);
+  padding-top: 5rem;
+}
+
+section.hero {
+  background:
+    radial-gradient(circle at top right, var(--color-accent-soft) 0%, transparent 50%),
+    var(--color-bg);
+}
+
+.hero__content {
+  max-width: 800px;
+}
+
+.hero__greeting {
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+.hero__name {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin: 0 0 0.5rem 0;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid var(--color-accent);
+  width: 0;
+  animation: 
+    typing 2.5s steps(26) 0.5s forwards,
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: var(--color-accent); }
+}
+
+.hero__role {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  color: var(--color-text-muted);
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+}
+
+.hero__intro {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 0 2rem 0;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+.btn--primary:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-accent-contrast);
+  transform: translateY(-2px);
+}
+
+.btn--outline {
+  background: transparent;
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn--outline:hover {
+  background: var(--color-accent-soft);
+  transform: translateY(-2px);
+}
+
+/* Variante "fantasma": sin borde, más discreta — ideal para acciones secundarias
+   como descargar el CV, donde queremos que el botón esté pero no compita
+   visualmente con la acción principal. */
+.btn--ghost {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.btn--ghost:hover {
+  background: var(--color-surface);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: translateY(-2px);
+}
