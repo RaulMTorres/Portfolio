@@ -34,10 +34,6 @@ El sitio incluye tres temas seleccionables desde la barra de navegación, persis
 ---
 
 
-Si no se define, el frontend apunta por defecto a `http://localhost:8080`.
-
----
-
 ## Instalación y desarrollo
 
 ```bash
