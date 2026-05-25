@@ -145,8 +145,8 @@
 .carousel__arrow--right { right: 8px; }
 
 @media (max-width: 600px) {
-  .projects__carousel { padding: 0 50px; }
-  .project-card      { flex: 0 0 240px; }
+  .projects__carousel { padding: 0 44px; }
+  .project-card      { flex: 0 0 calc(100vw - 100px); } /* fluido según el ancho real de pantalla */
 }
 
 

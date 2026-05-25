@@ -1,5 +1,6 @@
 .hero {
   min-height: 100vh;
+  min-height: 100svh; /* Android Chrome: excluye la barra de dirección */
   display: flex;
   align-items: center;
  

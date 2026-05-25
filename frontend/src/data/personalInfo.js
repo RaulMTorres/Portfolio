@@ -14,7 +14,7 @@ export const personalInfo = {
   about: `Soy un **desarrollador full stack junior** recién graduado en **FP Superior de Desarrollo de Aplicaciones Web**. Durante mis prácticas en MrHouston he trabajado en proyectos reales con **Java, React, SQL** y herramientas de inteligencia artificial.
 
 En 2022 decidí dar un cambio a mi vida y pasé de ser jefe de montador de mobiliario a formarme como desarrollador web. 
-Aunque parezcan mundos muy distintos, ese trabajó me enseñó habilidades que a día de hoy pongo en práctica como desarrollador: **organización, responsabilidad, atención al detalle, trato con cliente y visión global de negocio**.
+Aunque parezcan mundos muy distintos, ese trabajo me enseñó habilidades que a día de hoy pongo en práctica como desarrollador: **organización, responsabilidad, atención al detalle, trato con cliente y visión global de negocio**.
 
 Me apasiona **resolver problemas** y **aprender tecnologías nuevas**.
 

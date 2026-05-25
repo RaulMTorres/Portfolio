@@ -137,4 +137,8 @@ html.classic .contact__map iframe {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
+  .contact__form {
+    margin-top: 0; /* en móvil no hay segunda columna que alinear */
+  }
 }
