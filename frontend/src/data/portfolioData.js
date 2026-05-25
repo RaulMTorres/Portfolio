@@ -27,7 +27,7 @@ export const projects = [
     description:
       'Aplicación web interactiva donde el usuario crea su propio héroe de Dungeons & Dragons a través de un flujo guiado: nombre, raza asignada al azar, clase basada en sus respuestas, selección de habilidades y ficha final del personaje.',
     technologies: 'PHP, HTML5, CSS, JavaScript',
-    repoUrl: 'https://github.com/RaulMTorres/Portfolio',
+    repoUrl: 'https://github.com/RaulMTorres/Cesur-PHP-Project',
     demoUrl: null,
     imageUrl: '/Forja-tu-heroe.jpg',
   },
