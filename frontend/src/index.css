@@ -66,6 +66,23 @@ html.dark {
   color-scheme: dark;
 }
 
+html.light {
+  --color-bg: #FAFAF7;
+  --color-bg-alt: #F5F5F2;
+  --color-surface: #FFFFFF;
+  --color-border: #E7E5E4;
+  --color-text: #1C1917;
+  --color-text-muted: #57534E;
+  --color-accent: #DC4633;
+  --color-accent-hover: #B83A2B;
+  --color-accent-soft: rgba(220, 70, 51, 0.10);
+  --color-accent-ring: rgba(220, 70, 51, 0.18);
+  --color-accent-contrast: #FFFFFF;
+  --shadow: 0 6px 24px rgba(28, 25, 23, 0.08);
+  --shadow-lg: 0 18px 48px rgba(28, 25, 23, 0.12);
+  color-scheme: light;
+}
+
 html.classic {
   --color-bg: #0F172A;
   --color-bg-alt: #1E293B;

@@ -139,6 +139,6 @@ html.classic .contact__map iframe {
   }
 
   .contact__form {
-    margin-top: 0; /* en móvil no hay segunda columna que alinear */
+    margin-top: 0;
   }
 }

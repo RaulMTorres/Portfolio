@@ -1,9 +1,3 @@
-/**
- * Cliente HTTP centralizado.
- * Lee la URL base desde la variable de entorno VITE_API_URL
- * (definida en frontend/.env) y expone funciones para cada endpoint.
- */
-
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
 
 async function request(path, options = {}) {

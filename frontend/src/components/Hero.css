@@ -1,9 +1,9 @@
 .hero {
   min-height: 100vh;
-  min-height: 100svh; /* Android Chrome: excluye la barra de dirección */
+  min-height: 100svh;
   display: flex;
   align-items: center;
- 
+
   background:
     radial-gradient(circle at top right, var(--color-accent-soft) 0%, transparent 50%),
     var(--color-bg);
@@ -18,6 +18,8 @@ section.hero {
 
 .hero__content {
   max-width: 800px;
+  min-width: 0;
+  overflow-x: hidden;
 }
 
 .hero__greeting {
@@ -35,15 +37,26 @@ section.hero {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid var(--color-accent);
-  width: 0;
-  animation: 
+  width: fit-content;
+  max-width: 0;
+  animation:
     typing 2.5s steps(26) 0.5s forwards,
     blink 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from { max-width: 0; }
+  to   { max-width: 1000px; }
+}
+@media (max-width: 480px) {
+  .hero__name {
+    font-size: clamp(1.6rem, 7vw, 2.5rem);
+  }
+}
+@media (max-width: 360px) {
+  .hero__name {
+    font-size: clamp(1.4rem, 6.5vw, 2rem);
+  }
 }
 @keyframes blink {
   from, to { border-color: transparent; }
@@ -104,9 +117,6 @@ section.hero {
   transform: translateY(-2px);
 }
 
-/* Variante "fantasma": sin borde, más discreta — ideal para acciones secundarias
-   como descargar el CV, donde queremos que el botón esté pero no compita
-   visualmente con la acción principal. */
 .btn--ghost {
   background: transparent;
   color: var(--color-text);

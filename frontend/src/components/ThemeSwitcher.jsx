@@ -11,8 +11,9 @@ const STORAGE_KEY = 'portfolio-theme';
 
 function applyTheme(id) {
   const html = document.documentElement;
-  html.classList.remove('dark', 'classic');
-  if (id === 'dark') html.classList.add('dark');
+  html.classList.remove('light', 'dark', 'classic');
+  if (id === 'light')   html.classList.add('light');
+  if (id === 'dark')    html.classList.add('dark');
   if (id === 'classic') html.classList.add('classic');
 }
 
