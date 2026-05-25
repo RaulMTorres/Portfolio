@@ -8,7 +8,6 @@
 ├── frontend/                  # SPA con React + Vite
 │   ├── src/
 │   │   ├── components/        # Componentes por sección
-│   │   ├── api/               # Cliente HTTP
 │   │   └── App.jsx
 │   └── package.json
 └── README.md
