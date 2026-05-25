@@ -1,43 +1,62 @@
-# Portfolio - Raúl Martínez Torres
+# Portfolio — Raúl Martínez Torres
 
-- **Frontend:** React 18 + Vite
----
-## Estructura
-
-```
-├── frontend/                  # SPA con React + Vite
-│   ├── src/
-│   │   ├── components/        # Componentes por sección
-│   │   └── App.jsx
-│   └── package.json
-└── README.md
-```
+Portfolio personal accesible en [raulmartineztorres.dev](https://raulmartineztorres.dev)
 
 ---
 
-## Requisitos
+## Tecnologías
 
-- Node.js 18+ y npm
+- **React 18** + **Vite 5**
+- CSS puro con variables personalizadas (sin framework CSS)
 
 
+## Secciones
 
-## Cómo arrancar el proyecto
+| Sección | Descripción |
+|---|---|
+| Hero | Presentación con animación de escritura |
+| About | Biografía, foto y datos de contacto |
+| Skills | Marquee animado con modal de detalle por categoría |
+| Projects | Carrusel con modal expandible por proyecto |
+| Experience | Timeline de experiencia laboral |
+| Contact | Formulario conectado al backend |
 
-### 1. Frontend (React + Vite)
+---
+
+## Temas
+
+El sitio incluye tres temas seleccionables desde la barra de navegación, persistidos en `localStorage`:
+
+- **Claro** — fondo crema y rojo coral
+- **Oscuro** — fondo zinc oscuro y rojo coral
+- **Clásico** — fondo azul marino y azul cielo
+
+---
+
+
+Si no se define, el frontend apunta por defecto a `http://localhost:8080`.
+
+---
+
+## Instalación y desarrollo
 
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
 
-La aplicación queda en `http://localhost:5173`.
+## Build de producción
+
+```bash
+npm run build
+npm run preview  
+```
 
 ---
 
-## Data
 
-1. **`frontend/src/data/personalInfo.js`** — datos personales (nombre, email, teléfono, redes, texto del "sobre mí").
-2. **`frontend/src/data/portfolioData.js`** — datos de los proyectos.
+## Contacto
 
-
+- GitHub: [github.com/RaulMTorres](https://github.com/RaulMTorres)
+- LinkedIn: [linkedin.com/in/raulmartineztorres99](https://linkedin.com/in/raulmartineztorres99)
+- Web: [raulmartineztorres.dev](https://raulmartineztorres.dev)
